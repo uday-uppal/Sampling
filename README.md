@@ -20,7 +20,7 @@ We took the following sampling techniques:-
     n_sample_StratifiedSampling=(pow(1.96,2))*0.3*(1-0.3)/(pow((0.05/2),2))
     data_stratified=data2.groupby('Class', group_keys=False).apply(lambda x: x.sample(int(n_sample_StratifiedSampling/2),random_state=11))
     
-4)**Cluster Sampling** : is a sampling technique used when mutually homogeneous yet internally heterogeneous groupings are evident in a statistical population. Here the population is divided into clusters which are then selected at random. Each cluster should ideally be a representative of the population. The code snippet implementing Cluster Sampling, taken from 102053008.py file is as follows:-
+4) **Cluster Sampling** : is a sampling technique used when mutually homogeneous yet internally heterogeneous groupings are evident in a statistical population. Here the population is divided into clusters which are then selected at random. Each cluster should ideally be a representative of the population. The code snippet implementing Cluster Sampling, taken from 102053008.py file is as follows:-
 
     n_sample_ClusterSampling=(1.96**2)*0.1*(1-0.1)/((0.05/3)**2)
     s=set(list(data2['Time']))
