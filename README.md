@@ -8,7 +8,7 @@ We took the following sampling techniques:-
 
 1) **Simple Random Sampling** : is a type of probability sampling in which the we randomly selects a subset from the population. The code snippet , taken from 102053008.py file is as follows:-
 
-    n_sample_simpleRandomSampling=(1.96**2)*0.5*(1-0.5)/(0.05**2)
+    n_sample_simpleRandomSampling=(pow(1.96,2))*0.5*(1-0.5)/(pow((0.05),2))
     data_simpleRandomSampling=(data2.sample(int(n_sample_simpleRandomSampling),random_state=10))
 
 2) **Systematic Sampling** : is a probability sampling method where we select members of the population at a regular interval.The code snippet implementing Systematic Sampling, taken from 102053008.py file is as follows:-
